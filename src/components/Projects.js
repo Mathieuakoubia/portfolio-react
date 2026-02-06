@@ -2,6 +2,29 @@ import React from 'react';
 import Card from "./Card";
 
 function Projects() {
+
+    const projetsData = [
+        {
+            id :"3",
+            title : "projet",
+            desc : "premier projet"
+
+        },
+
+        {
+            id :"3",
+            title : "troisime projet",
+            desc : "premier projet"
+
+        },
+
+        {
+            id :"3",
+            title : "deuxieme projet",
+            desc : "premier projet"
+
+        },
+    ]
     return (
        
         <section className="projets-section">
@@ -9,23 +32,16 @@ function Projects() {
         
         {/* je rajoute les carte du fichier Card */}
         
-        <Card 
-                title="Site E-commerce" 
-                desc="Un site de vente en ligne créé avec HTML et CSS." 
-            />
+       <div className='projects-grid'>
+        <Card
+            key={Projects.id}
+            title = {Projects.title}
+            desc = {Projects.desc}
+        />
 
-            <Card 
-                title="To-Do List" 
-                desc="Une application pour gérer ses tâches en JavaScript." 
-            />
-
-            <Card 
-                title="Mon Portfolio" 
-                desc="Le site que tu es en train de regarder, fait avec React !" 
-            />
+       </div>
       </section>
-
-
+  
     );
 }
 
