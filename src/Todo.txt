@@ -1,0 +1,23 @@
+ok je vais presenter 3 projets il me faut une idee originale pour attirer et presenter le projet et il me fzut une dA original 
+
+Developpement d'une application mobile en flutter nommé Paye ton kaya qui est un logiciel 
+
+mise en place d'un dispositif power automate qui lance un emsemble de script typescript afin de faciliter la transformation d'un fichier excel des que tu deposer le fichier dans un dossiier un emsemble de script excel se lance pour le mofier et le formater au norme de l'entreprise 
+
+
+
+developpement d'un app mobile flutter 
+de bien être en cour de developpement 
+gestion de souscription 
+gestion d'exercise synchroniser entre plusieur utlidation gestion d'une bdd Nosql firestore $
+
+
+
+
+typo ubuntu
+
+
+comb 1 
+8a307F
+79a7d3
+6883bc
