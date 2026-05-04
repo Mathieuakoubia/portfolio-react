@@ -12,7 +12,54 @@ gestion de souscription
 gestion d'exercise synchroniser entre plusieur utlidation gestion d'une bdd Nosql firestore $
 
 
+Crée-moi un portfolio React complet avec un thème Synthwave Purple Pixel Art.
+Stack : React + CSS Modules (ou Tailwind si dispo) + Google Fonts
+Font : Press Start 2P (Google Fonts) — à utiliser partout sans exception
+Palette de couleurs :
+--bg-deep:     #0d050f
+--bg-card:     #1a0a20
+--bg-darker:   #0a0310
+--accent:      #c084fc
+--accent-hi:   #f0abfc
+--accent-dark: #7c3aed
+--accent-mid:  #a855f7
+--text:        #fdf4ff
+--text-muted:  #d8b4fe
+Style pixel art :
 
+Toutes les bordures sont en 2px solid #c084fc avec effet 3D : border-bottom: 3px solid #7c3aed; border-right: 3px solid #7c3aed
+Pas de border-radius (zéro arrondi partout)
+image-rendering: pixelated sur les images
+Effet scanlines sur le hero via repeating-linear-gradient
+Curseur clignotant animé █ dans le nav logo
+
+Sections à créer dans cet ordre :
+
+Navbar — logo M.AKOUBIA█, liens HOME / SKILLS / EXP / CONTACT, badge [ DISPO ]
+Hero — layout 2 colonnes : gauche avec nom MATHIEU AKOUBIA (text-shadow 3 niveaux violet), subtitle // FULL STACK DEVELOPER, description, boutons [ PROJETS ] et [ CONTACT ] — droite avec photo (filtre contrast(1.15) saturate(0.5) hue-rotate(220deg)), grille de dots décorative, 3 stat boxes 2+ ANS EXP / 5+ TECHNOS / C1 ANGLAIS
+Ticker animé — bande défilante CSS infinie avec les technos : PYTHON ★ REACT ★ VUE.JS ★ NEXT.JS ★ PHP·SYMFONY ★ NODE.JS ★ AZURE ★ MYSQL ★ SERVICENOW ★ CI/CD ★ MACHINE LEARNING
+About + Expériences — 2 colonnes : gauche 4 info-cards NANTES / ALTERNANCE / C1 / INTER. — droite 2 exp-items avec border-left violet épais pour : Solutions&co (Sept 2023→2024) et Atos Engage-esm (Sept 2021→2022)
+Compétences — grille 3 colonnes, 6 skill-cards avec catégories : FRONT-END / BACK-END / DEVOPS / ITSM / IA+DATA / SOFT SKILLS, tags en pills avec border-bottom violet
+Diplômes — grille 3 colonnes : MSc IA EPSI 2023-2026 / Bachelor Dev EPSI 2021-2022 / Bac ES Abidjan 2018
+Contact — 2 colonnes : gauche titre TRAVAILLONS ENSEMBLE. + bouton — droite 4 contact-rows avec préfixe // MAIL / // TEL / // LINKEDIN / // TWITTER
+Footer — © 2026 MATHIEU AKOUBIA + SYNTHWAVE EDITION · BUILT WITH REACT
+
+Données à utiliser :
+Nom : Mathieu Akoubia
+Mail : mathieuakoubia@gmail.com
+Tel : 06 22 56 61 58
+LinkedIn : @mathieu-akoubia
+Twitter : @Mathieuakoubia
+Photo : /src/assets/photo.jpg
+Contraintes importantes :
+
+Zéro border-radius partout
+Tous les labels de section préfixés par >_ ex : >_ STACK.SYS
+Boutons avec effet 3D pixel (border-bottom + border-right plus sombres)
+Ticker en animation: ticker linear infinite avec duplication du contenu pour la boucle parfaite
+Composants séparés dans /src/components/ : Navbar.jsx, Hero.jsx, Ticker.jsx, About.jsx, Skills.jsx, Education.jsx, Contact.jsx, Footer.jsx
+Un fichier /src/styles/variables.css avec toutes les CSS custom properties
+App.jsx qui importe tous les composants dans l'ordre
 
 typo ubuntu
 

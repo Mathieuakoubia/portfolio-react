@@ -1,0 +1,16 @@
+:root {
+  --bg:           #328ae3;
+  --bg-grid:      rgba(255, 255, 255, 0.08);
+  --bloc-text:    #ecdfc1;
+  --bloc-title:   #f8c344;
+  --bloc-contact: #dbdbdb;
+  --noir:         #000000;
+  --bleu-dark:    #1a5fa0;
+  --rouge:        #ff4d6d;
+  --vert:         #4caf50;
+  --blanc:        #ffffff;
+
+  --font-display: 'Bangers', cursive;
+  --font-label:   'Press Start 2P', monospace;
+  --font-body:    'Comic Neue', cursive;
+}
