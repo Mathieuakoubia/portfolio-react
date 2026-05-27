@@ -1,22 +1,31 @@
-.about { padding: 48px 40px; }
+.about {
+  padding: 80px 48px;
+  background: var(--bg);
+}
 
 .inner { max-width: 1100px; margin: 0 auto; }
 
-.header { margin-bottom: 28px; }
+.header { margin-bottom: 40px; }
 
 .pill {
-  display: inline-flex;
-  align-items: center;
-  background: var(--bloc-title);
-  color: var(--noir);
   font-family: var(--font-display);
-  font-size: 28px;
-  letter-spacing: 2px;
-  padding: 8px 28px;
-  border: 3px solid var(--noir);
-  border-bottom: 4px solid var(--noir);
-  border-right: 4px solid var(--noir);
-  border-radius: 50px;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--text);
+  display: block;
+  position: relative;
+  padding-left: 18px;
+}
+
+.pill::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 4px;
+  background: var(--accent);
+  border-radius: 2px;
 }
 
 .grid {
@@ -26,48 +35,46 @@
 }
 
 /* ── Info cards ── */
-.infoCol { display: flex; flex-direction: column; gap: 8px; }
+.infoCol { display: flex; flex-direction: column; gap: 10px; }
 
 .infoCard {
-  background: var(--bloc-text);
-  border: 3px solid var(--noir);
-  border-bottom: 4px solid var(--noir);
-  border-right: 4px solid var(--noir);
-  padding: 14px 16px;
-  transition: transform 0.1s;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  transition: border-color 0.2s, transform 0.2s;
 }
 
-.infoCard:hover { transform: translate(-2px, -2px); }
+.infoCard:hover { border-color: var(--border-accent); transform: translateY(-2px); }
 
 .infoLabel {
   font-family: var(--font-label);
-  font-size: 7px;
+  font-size: 9px;
   letter-spacing: 1px;
-  color: #666;
-  margin-bottom: 4px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
   display: block;
 }
 
 .infoValue {
   font-family: var(--font-display);
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: var(--bleu-dark);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
 }
 
 /* ── Exp items ── */
 .expCol { display: flex; flex-direction: column; gap: 14px; }
 
 .expItem {
-  background: var(--bloc-text);
-  border: 3px solid var(--noir);
-  border-bottom: 4px solid var(--noir);
-  border-right: 4px solid var(--noir);
-  padding: 20px 24px;
-  transition: transform 0.1s;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 28px;
+  transition: border-color 0.2s, transform 0.2s;
 }
 
-.expItem:hover { transform: translate(-2px, -2px); }
+.expItem:hover { border-color: var(--border-accent); transform: translateY(-2px); }
 
 .expHeader {
   display: flex;
@@ -80,35 +87,32 @@
 
 .expCompany {
   font-family: var(--font-display);
-  font-size: 24px;
-  letter-spacing: 1px;
-  color: var(--bleu-dark);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
 }
 
 .expPeriodBadge {
-  background: var(--rouge);
-  color: var(--blanc);
+  background: rgba(79, 70, 229, 0.1);
+  color: var(--accent);
   font-family: var(--font-label);
-  font-size: 7px;
-  padding: 5px 12px;
-  border: 2px solid var(--noir);
-  border-bottom: 3px solid var(--noir);
-  border-right: 3px solid var(--noir);
+  font-size: 10px;
+  padding: 5px 14px;
+  border-radius: 20px;
   white-space: nowrap;
 }
 
 .expRole {
   font-family: var(--font-label);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1px;
-  color: #555;
-  margin-bottom: 10px;
+  color: var(--accent-sec);
+  margin-bottom: 12px;
 }
 
 .expDesc {
   font-family: var(--font-body);
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.75;
-  opacity: 0.9;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-muted);
 }

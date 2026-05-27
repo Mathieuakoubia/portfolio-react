@@ -1,13 +1,16 @@
 import './index.css';
-import Navbar    from './components/Navbar';
-import Ticker    from './components/Ticker';
-import Hero      from './components/Hero';
-import Projects  from './components/Projects';
-import About     from './components/About';
-import Skills    from './components/Skills';
-import Education from './components/Education';
-import Contact   from './components/Contact';
-import Footer    from './components/Footer';
+import Navbar   from './components/Navbar.jsx';
+import Ticker   from './components/Ticker.jsx';
+import Hero     from './components/Hero.jsx';
+import Wave     from './components/Wave.jsx';
+import Projects from './components/Projects.jsx';
+import About    from './components/About.jsx';
+import Skills   from './components/Skills.jsx';
+import Contact  from './components/Contact.jsx';
+import Footer   from './components/Footer.jsx';
+
+const BG  = '#eae9dc';
+const BG2 = '#F8FAFC';
 
 function App() {
   return (
@@ -15,10 +18,13 @@ function App() {
       <Navbar />
       <Ticker />
       <Hero />
+      <Wave topColor={BG}  bottomColor={BG2} />
       <Projects />
+      <Wave topColor={BG2} bottomColor={BG} flip />
       <About />
+      <Wave topColor={BG}  bottomColor={BG2} />
       <Skills />
-      <Education />
+      <Wave topColor={BG2} bottomColor={BG} flip />
       <Contact />
       <Footer />
     </div>

@@ -3,7 +3,14 @@
     "allow": [
       "Bash(npm start *)",
       "Bash(tasklist)",
-      "Bash(findstr \"node\")"
+      "Bash(findstr \"node\")",
+      "Bash(dir \"c:\\\\Users\\\\user\\\\Documents\\\\REACT\\\\portfolio\\\\public\\\\assets\\\\images\")",
+      "Bash(npm install *)",
+      "Bash(node -e \"const si = require\\('react-icons/si'\\); const keys = Object.keys\\(si\\).filter\\(k => k.toLowerCase\\(\\).includes\\('azure'\\) || k.toLowerCase\\(\\).includes\\('excel'\\) || k.toLowerCase\\(\\).includes\\('microsoft'\\)\\); console.log\\(keys.slice\\(0,20\\)\\)\")",
+      "Bash(node -e \"const si = require\\('react-icons/si'\\); const keys = Object.keys\\(si\\).filter\\(k => k.toLowerCase\\(\\).includes\\('power'\\) || k.toLowerCase\\(\\).includes\\('azure'\\)\\); console.log\\(keys\\)\")",
+      "Bash(node -e \"const si = require\\('react-icons/si'\\); console.log\\('version check, total icons:', Object.keys\\(si\\).length\\); const keys = Object.keys\\(si\\).filter\\(k => k.toLowerCase\\(\\).includes\\('micro'\\)\\); console.log\\(keys.slice\\(0,15\\)\\)\")",
+      "Bash(node -e \"const si = require\\('react-icons/si'\\); ['SiFlutter','SiDart','SiTypescript','SiFirebase','SiNodedotjs','SiPython','SiDocker'].forEach\\(k => console.log\\(k, !!si[k]\\)\\)\")",
+      "Bash(node -e ' *)"
     ]
   }
 }

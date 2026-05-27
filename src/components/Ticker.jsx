@@ -1,19 +1,17 @@
 import React from 'react';
 import styles from './Ticker.module.css';
 
-const ITEM = 'ABOUT ME';
-const COUNT = 14;
+const ITEMS = ['React', 'Flutter', 'TypeScript', 'Node.js', 'Firebase', 'Python', 'Next.js', 'MongoDB', 'Dart', 'Azure', 'Docker', 'PostgreSQL'];
+const DOUBLED = [...ITEMS, ...ITEMS];
 
 const Ticker = () => (
-  <div className={styles.tickerOuter} aria-hidden="true">
-    <div className={styles.tickerInner}>
-      <div className={styles.track}>
-        {Array.from({ length: COUNT }).map((_, i) => (
-          <span key={i} className={styles.item}>
-            {ITEM}&nbsp;<span className={styles.star}>★</span>&nbsp;
-          </span>
-        ))}
-      </div>
+  <div className={styles.ticker} aria-hidden="true">
+    <div className={styles.track}>
+      {DOUBLED.map((item, i) => (
+        <span key={i} className={styles.item}>
+          {item}<span className={styles.dot}>·</span>
+        </span>
+      ))}
     </div>
   </div>
 );

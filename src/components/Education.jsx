@@ -2,9 +2,24 @@ import React from 'react';
 import styles from './Education.module.css';
 
 const DIPLOMAS = [
-  { degree: 'MSc Intelligence Artificielle', school: 'EPSI',           period: '2023 — 2026', detail: 'Expert en IA & Data Science' },
-  { degree: 'Bachelor Développeur',          school: 'EPSI',           period: '2021 — 2022', detail: 'Développement Full Stack' },
-  { degree: 'Baccalauréat ES',               school: 'Lycée — Abidjan',period: '2018',        detail: 'Mention Bien' },
+  {
+    degree: 'MSc Intelligence Artificielle',
+    school: 'EPSI',
+    period: '2023 — 2026',
+    detail: 'Expert en IA & Data Science',
+  },
+  {
+    degree: 'Bachelor Développeur',
+    school: 'EPSI',
+    period: '2021 — 2022',
+    detail: 'Développement Full Stack',
+  },
+  {
+    degree: 'Baccalauréat ES',
+    school: 'Lycée — Abidjan',
+    period: '2018',
+    detail: 'Mention Bien',
+  },
 ];
 
 const Education = () => (
