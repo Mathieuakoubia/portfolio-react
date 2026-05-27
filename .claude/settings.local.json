@@ -10,7 +10,9 @@
       "Bash(node -e \"const si = require\\('react-icons/si'\\); const keys = Object.keys\\(si\\).filter\\(k => k.toLowerCase\\(\\).includes\\('power'\\) || k.toLowerCase\\(\\).includes\\('azure'\\)\\); console.log\\(keys\\)\")",
       "Bash(node -e \"const si = require\\('react-icons/si'\\); console.log\\('version check, total icons:', Object.keys\\(si\\).length\\); const keys = Object.keys\\(si\\).filter\\(k => k.toLowerCase\\(\\).includes\\('micro'\\)\\); console.log\\(keys.slice\\(0,15\\)\\)\")",
       "Bash(node -e \"const si = require\\('react-icons/si'\\); ['SiFlutter','SiDart','SiTypescript','SiFirebase','SiNodedotjs','SiPython','SiDocker'].forEach\\(k => console.log\\(k, !!si[k]\\)\\)\")",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(npm run *)",
+      "Bash(node -e \"const si = require\\('react-icons/si'\\); ['SiGithub','SiFastapi','SiPostgresql','SiSupabase','SiRailway','SiPowerautomate'].forEach\\(k => console.log\\(k, !!si[k]\\)\\)\")"
     ]
   }
 }

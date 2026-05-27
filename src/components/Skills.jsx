@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   SiReact, SiVuedotjs, SiNextdotjs, SiHtml5, SiJavascript, SiTypescript,
-  SiNodedotjs, SiPhp, SiSymfony, SiPython, SiMysql,
+  SiNodedotjs, SiSymfony, SiPython, SiMysql,
   SiDocker, SiGit, SiGithubactions,
   SiScikitlearn, SiPandas, SiFlutter, SiFirebase,
 } from 'react-icons/si';
