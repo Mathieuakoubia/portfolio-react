@@ -1,0 +1,79 @@
+.caseStudies {
+  padding: 80px 0;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.header { margin-bottom: 40px; }
+
+.label {
+  font-family: var(--font-label);
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.hint {
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-top: 10px;
+}
+
+.viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 48px 12px;
+}
+
+.viewport::-webkit-scrollbar { height: 6px; }
+
+.track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+}
+
+.trackItem {
+  flex: 0 0 min(380px, 82vw);
+  scroll-snap-align: start;
+}
+
+@media (min-width: 900px) {
+  .hint {
+    display: none;
+  }
+
+  .viewport {
+    overflow: hidden;
+    padding: 0 48px;
+  }
+
+  .track {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .trackItem {
+    flex: 0 0 360px;
+  }
+}

@@ -1,0 +1,79 @@
+.card {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(79, 70, 229, 0.08);
+}
+
+.category {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--accent);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.tagline {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.techRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.techChip {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 4px 10px;
+}
+
+.metricsRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.openBtn {
+  align-self: flex-start;
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  border: 1px solid var(--border-accent);
+  border-radius: 8px;
+  padding: 10px 16px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.openBtn:hover {
+  background: rgba(79, 70, 229, 0.06);
+}
