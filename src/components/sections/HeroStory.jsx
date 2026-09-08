@@ -3,8 +3,6 @@ import Reveal from '../common/Reveal.jsx';
 import { heroStory } from '../../data/storytellingData';
 import styles from '../../styles/HeroStory.module.css';
 
-const photo = '/assets/images/photo cv.png';
-
 const HeroStory = () => (
   <section id="hero" className={styles.hero}>
     <div className={styles.inner}>
@@ -27,10 +25,6 @@ const HeroStory = () => (
             Voir les etudes de cas
           </a>
         </div>
-      </Reveal>
-
-      <Reveal className={styles.visual} delay={0.15}>
-        <img src={photo} alt={heroStory.name} className={styles.photo} />
       </Reveal>
     </div>
   </section>
