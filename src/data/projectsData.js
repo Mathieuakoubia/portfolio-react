@@ -79,16 +79,6 @@ const projectsData = [
             'Typographies : Gelica pour les titres, Poppins pour le texte, Playfair italique pour les respirations.',
           ],
         },
-        {
-          id: 'rendu',
-          title: 'Le rendu',
-          todo: true,
-        },
-        {
-          id: 'critique',
-          title: 'Auto-critique',
-          todo: true,
-        },
       ],
       palette: [
         { name: 'Turquoise', hex: '#0DAABA' },

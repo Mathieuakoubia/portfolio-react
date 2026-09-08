@@ -359,10 +359,12 @@ body {
   animation: pulse 2.8s infinite ease-in-out;
 }
 
+
 .excel-icon {
   background: rgba(121, 167, 211, 0.95);
-  box-shadow: 0 0 20px rgba(121, 167, 211, 0.35);
+  box-shadow: 0 0 20px rgba(121, 167, 211, 0.  );
 }
+         
 
 .process-icon {
   background: rgba(104, 131, 188, 0.95);

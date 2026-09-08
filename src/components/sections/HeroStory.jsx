@@ -18,9 +18,6 @@ const HeroStory = () => (
         </div>
 
         <div className={styles.btnRow}>
-          <a href={heroStory.cvUrl} className={styles.btn} target="_blank" rel="noopener noreferrer">
-            Telecharger le CV
-          </a>
           <a href="#case-studies" className={styles.btnAlt}>
             Voir les etudes de cas
           </a>

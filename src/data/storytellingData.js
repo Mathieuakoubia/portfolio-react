@@ -6,7 +6,6 @@ export const heroStory = {
   role: 'Bachelor 3 Design & Developpement Web',
   summary:
     "Apres plusieurs annees en informatique et en developpement web, j'ai rejoint l'ESD en 2025 pour affiner ma vision du design sur le web. Mon parcours se construit a la croisee du developpement et du design.",
-  cvUrl: '/assets/cv.pdf',
   // Ville a confirmer.
   location: '',
   contract: 'Stage',
